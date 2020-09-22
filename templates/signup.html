@@ -1,0 +1,16 @@
+{{ define "content" }}
+
+<form class="form-signin" role="form" action="/signup_account" method="post">
+  <h2 class="form-signin-heading">
+    <i class="fa fa-comments-o">
+      Let IT Go
+    </i>
+  </h2>
+  <div class="lead">Regístrese para obtener una cuenta</div>
+  <input id="name" type="text" name="name" class="form-control" placeholder="Nombre" required autofocus>
+  <input type="email" name="email" class="form-control" placeholder="E-mail" required>
+  <input type="password" name="password" class="form-control" placeholder="Password" required>
+  <button class="btn btn-lg btn-primary btn-block" type="submit">Registrar</button>
+</form>
+
+{{ end }}

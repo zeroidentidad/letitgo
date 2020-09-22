@@ -1,0 +1,13 @@
+{{ define "content" }}
+
+<form role="form" action="/thread/create" method="post">
+  <div class="lead">Inicie un nuevo hilo con el tema</div>
+  <div class="form-group">
+    <textarea class="form-control" name="topic" id="topic" placeholder="Tema del hilo" rows="4"></textarea>
+    <br/>
+    <br/>
+    <button class="btn btn-lg btn-primary pull-right" type="submit">Iniciar este hilo</button>
+  </div>
+</form>
+
+{{ end }}

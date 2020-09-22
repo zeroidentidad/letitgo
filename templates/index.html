@@ -1,0 +1,20 @@
+{{ define "content" }}
+<p class="lead">
+  <a href="/thread/new">Inicie un hilo</a> o únete a uno!
+</p>
+
+{{ range . }}
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <span class="lead"> <i class="fa fa-comment-o"></i> {{ .Topic }}</span>
+    </div>
+    <div class="panel-body">
+      Iniciado por {{ .User.Name }} - {{ .CreatedAtDate }} - {{ .NumReplies }} posts.
+      <div class="pull-right">
+        <a href="/thread/read?id={{.Uuid }}">Ver hilo</a>
+      </div>
+    </div>
+  </div>
+{{ end }}
+
+{{ end }}
